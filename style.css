@@ -1,0 +1,23 @@
+body{
+  background:black;
+  text-align:center;
+}
+.logo {
+  margin-top:20px;
+  height:60vh;
+  max-width:80%;
+}
+.social {
+  margin-top:20px;
+  height:10vh;
+  transition: all 0.3s ease;
+}
+.social:hover {
+  transform: scale(1.1);
+  filter: brightness(1.5);
+}
+.coming-soon {
+  margin-top:20px;
+  height:20vh;
+  max-width:80%;
+}
