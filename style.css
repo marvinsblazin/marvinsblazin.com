@@ -170,7 +170,7 @@ p strong {
   display: inline-block;
   box-sizing: border-box;
   vertical-align: top;
-  width: clamp(100px, 45%, 400px);
+  width: clamp(10px, 45%, 400px);
   max-width: 100%;
   margin: 10px;
 }
