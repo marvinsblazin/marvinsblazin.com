@@ -171,6 +171,6 @@ p strong {
   box-sizing: border-box;
   vertical-align: top;
   width: clamp(10px, 45%, 400px);
-  max-width: 100%;
+  max-width: 80%;
   margin: 10px;
 }
