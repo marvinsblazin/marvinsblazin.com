@@ -132,8 +132,8 @@ p strong {
 #meet-marvin {
   margin-top:40px;
   background:
-    linear-gradient(to right,rgba(0, 0, 0, .7) 60%, rgba(0, 0, 0, 0) 100%), 
-    url("marvin.jpg") center / cover no-repeat;
+    linear-gradient(to right,rgba(0, 0, 0, .7) 0%,rgba(0, 0, 0, .7) 60%, rgba(0, 0, 0, 0) 100%), 
+    url("marvin.jpg") left / cover no-repeat;
   box-sizing: border-box;
 }
 #meet-marvin h2 {
