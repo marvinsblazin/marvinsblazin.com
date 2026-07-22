@@ -100,13 +100,14 @@ section h2 {
   background: url("jars.png") top / 100% auto no-repeat;
   z-index: -1;
 }
+/* here! */
 .columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+  align-items: start;
 }
 .columns p {
-  flex: 1 1 45%;
   text-align:center;
   min-width: 0;
 }
@@ -127,9 +128,6 @@ p strong {
   height: auto;
   display: block;
   border-radius: 20px;
-}
-#our-sauce .columns p {
-  flex: 0 0 45%;
 }
 #meet-marvin {
   margin-top:40px;
@@ -154,13 +152,8 @@ p strong {
   margin-top:40px;
 }
 #order-now .columns {
+  grid-template-columns: 1fr 60%;
   align-items: flex-start;
-}
-#order-now .local {
-  flex: 0 0 60%;
-}
-#order-now .socials {
-  flex: 1;
 }
 #order-now .social {
   display: block!important;;
