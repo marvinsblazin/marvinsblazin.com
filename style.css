@@ -155,6 +155,10 @@ p strong {
   grid-template-columns: 1fr 60%;
   align-items: flex-start;
 }
+#order-now .socials,
+#order-now .local {
+  min-width: 0;
+}
 #order-now .social {
   display: block!important;;
   margin-top:40px;
