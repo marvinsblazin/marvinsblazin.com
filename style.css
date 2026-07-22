@@ -1,23 +1,172 @@
+html {
+  scroll-behavior: smooth;
+}
 body{
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: clamp(16px, 2vw, 24px);
+  line-height: 1.5;
+  font-weight: 400;
   background:black;
+  color: white;
   text-align:center;
+}
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(25%);
+}
+.title, .nav {
+  margin-top:0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: clamp(16px, 5vw, 48px);
+  text-transform: all-caps;
+
 }
 .logo {
   margin-top:20px;
-  height:60vh;
+  max-height:40vh;
   max-width:80%;
 }
 .social {
   margin-top:20px;
+}
+.social+.social {
+  margin-left:20px;
+}
+.social img {
   height:10vh;
   transition: all 0.3s ease;
 }
-.social:hover {
+.social img:hover {
   transform: scale(1.1);
   filter: brightness(1.5);
 }
 .coming-soon {
   margin-top:20px;
-  height:20vh;
+  max-height:20vh;
   max-width:80%;
+}
+.nav {
+  margin:20px 0;
+}
+.nav a{
+  display: inline-block;
+  text-decoration:none;
+  transition: all 0.3s ease;
+  background-image:linear-gradient(#f07b09, #c30001);
+  color: transparent;
+  background-clip: text;
+}
+.nav a+a {
+  margin-left:20px;
+}
+.nav a:hover {
+  color:white;
+}
+section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+section p {
+  margin: 10px;
+}
+section h2 {
+  font-size: clamp(24px, 5vw, 48px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+#our-sauce {
+  margin-top:25%;
+  position:relative;
+}
+#our-sauce::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  padding-top:100%;
+  margin-top: -25%;
+  background: url("jars.png") top / 100% auto no-repeat;
+  z-index: -1;
+}
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.columns p {
+  flex: 1 1 45%;
+  text-align:center;
+  min-width: 0;
+}
+p strong {
+  color:#ebbd40;
+  text-transform: uppercase;
+  display:block;
+  font-size: clamp(16px, 3vw, 24px);
+  margin:0 auto 5px auto;
+}
+.icon {
+  display:block;
+  max-height: 50px;
+  margin:0 auto 10px auto;
+}
+.columns .aside-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+#meet-marvin {
+  margin-top:40px;
+  background:
+    linear-gradient(to right,rgba(0, 0, 0, .7) 60%, rgba(0, 0, 0, 0) 100%), 
+    url("marvin.jpg") center / cover no-repeat;
+  box-sizing: border-box;
+}
+#meet-marvin h2 {
+  margin-bottom:0;
+  padding-bottom:0;
+}
+#meet-marvin .subtitle {
+  margin-bottom:20px;
+}
+#meet-marvin p~p {
+  padding-right:30%;
+  text-align: left;
+}
+#order-now {
+  background:none;
+  margin-top:40px;
+}
+#order-now .columns {
+  align-items: flex-start;
+}
+#order-now .local {
+  flex: 0 0 60%;
+}
+#order-now .socials {
+  flex: 1;
+}
+#order-now .social {
+  display: block!important;;
+  margin-top:40px;
+  margin-left:0;
+}
+.local1{
+  width:100%;
+}
+.local2 {
+  width:80%;
 }

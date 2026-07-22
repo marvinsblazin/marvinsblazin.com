@@ -2,15 +2,89 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvin's Blazin</title>
   </head>
   <body>
 
-    <h1><img src="logo.png" class="logo"></h1>
-    <a href="https://www.instagram.com/marvinsblazin"><img src="social-instagram.png" class="social"></a>
-    <h2><img src="coming-soon.png" class="coming-soon"></h2>
-    
+    <video autoplay muted loop id="background-video" poster="poster.jpg">
+      <source src="background.webm" type="video/webm" autoplay muted loop>
+      <source src="background.mp4" type="video/mp4" autoplay muted loop>
+    </video>
+
+    <h1><img src="new-logo.png" alt="Marvin's Blazin Pepper Co" class="logo"></h1>
+    <a href="https://www.instagram.com/marvinsblazin" class="social"><img src="social-instagram.png"></a>
+    <a href="https://www.facebook.com/profile.php?id=61591836607166" class="social"><img src="social-facebook.png"></a>
+    <nav class="nav">
+      <a href="#our-sauce">Our Sauce</a>
+      <a href="#meet-marvin">Meet Marvin</a>
+      <a href="#order-now">Order Now</a>
+    </nav>
+
+    <section id="our-sauce">
+      <h2 class="title">Our Sauce</h2>
+      <p>Why we cook our pepper sauce: the secret to bold flavor, smooth texture, & lasting freshness!</p>
+      <div class="columns">
+        <p>
+          <img src="icon-flavour.png" class="icon">
+          <strong>Builds Flavour</strong>
+          Brings all the fresh peppers, garlic, & veggies together for a deeper, richer Caribbean taste.
+        </p>
+        <p>
+          <img src="icon-heat.png" class="icon">
+          <strong>Tames Raw Heat</strong>
+          Balances the fire so you get bold, delicious heat; not just raw spice.
+        </p>
+        <p>
+          <img src="icon-preservation.png" class="icon">
+          <strong>Natural Preservation</strong>
+          Helps reduce harmful bacteria, so the sauce stays fresh longer without artificial preservatives.
+        </p>
+        <p>
+          <img src="cook.jpg" class="aside-image">
+        </p>
+        <p>
+          <img src="icon-texture.png" class="icon">
+          <strong>Smooth, Perfect Texture</strong>
+          Softens the peppers and blends everything into a smooth, consistent sauce that you can enjoy on anything.
+        </p>
+        <p>
+          <img src="icon-enjoyable.png" class="icon">
+          <strong>Safer & More Enjoyable</strong>
+          Creates flavourful, ready-to-eat sauce that is easy on the stomach and packed with real taste.
+        </p>
+      </div>
+    </section>
+    <section id="meet-marvin">
+      <h2 class="title">Meet Marvin</h2>
+      <p class="subtitle"><strong>The heart behind Marvin's Blazin' Pepper Co.</strong></p>
+      <p>For Marvin, great pepper sauce is more than just heat—it is family, tradition, and a lifetime of passion.</p>
+      <p>Growing up with Caribbean roots, he watched his father make fresh, homemade pepper sauce using recipes and techniques passed down through generations. Those early memories sparked a lifelong appreciation for authentic Caribbean flavour.</p>
+      <p>Marvin’s love for cooking began at just 14 years old when he started working at Wendy’s. By 17, he had worked his way up to management. At 25, he fulfilled a lifelong dream by opening his first Caribbean restaurant, where he thrived as a chef and shared his passion for bold, authentic food with the community.</p>
+      <p>As family became the priority, life took him in a different direction, but his passion for creating unforgettable flavours never faded.</p>
+      <p>Today, Marvin is bringing that passion back to the kitchen with Marvin’s Blazin’ Hot Sauce—handcrafted pepper sauces inspired by his father’s Caribbean traditions, made with fresh ingredients, bold flavour, and just the right amount of fire. Proudly made local in the heart of Hamilton, every bottle is a tribute to family, heritage, and the belief that great food brings people together.</p>
+    </section>
+    <section id="order-now">
+      <h2 class="title">Order Now</h2>
+      <div class="columns">
+        <div class="socials">
+          <p><strong>Message us on social media to place an order!</strong></p>
+          <a href="https://www.instagram.com/marvinsblazin" class="social"><img src="social-instagram.png"></a>
+          <a href="https://www.facebook.com/profile.php?id=61591836607166" class="social"><img src="social-facebook.png"></a>
+        </div>
+        <div class="local">
+          <img src="local1.png" class="local1">
+        </div>
+      </div>
+      <img src="local2.png" class="local2">
+    </section>
   </body>
 </html>
