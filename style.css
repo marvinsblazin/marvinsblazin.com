@@ -166,3 +166,9 @@ p strong {
 .local2 {
   width:80%;
 }
+.flavour-grid img {
+  display: inline-block;
+  vertical-align: top;
+  width: clamp(100px, 45%, 400px);
+  margin: 10px;
+}
